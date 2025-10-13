@@ -1318,18 +1318,16 @@ section {
 /* レスポンシブ対応 */
 @media (max-width: 1024px) {
     .header-content {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
     
     .nav {
-        order: 3;
-        width: 100%;
-        justify-content: flex-start;
-        gap: 15px;
+        display: none !important;
     }
     
-    .nav a {
-        font-size: 0.85rem;
+    .mobile-menu-toggle {
+        display: flex;
     }
 
     .workflow-steps {
