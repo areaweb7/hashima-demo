@@ -21,6 +21,10 @@
     --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Noto Sans JP', sans-serif;
     color: var(--text-color);
@@ -192,9 +196,10 @@ body {
     background-repeat: no-repeat;
     color: white;
     padding: 120px 0 120px;
-    overflow: visible;
+    overflow: hidden;
     min-height: 600px;
     margin-bottom: 0;
+    z-index: 0;
 }
 
 .hero-image-pc {
@@ -356,6 +361,8 @@ body {
     padding: 60px 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     border-bottom: 1px solid var(--border-color);
+    position: relative;
+    z-index: 1;
 }
 
 .lead-content {
@@ -511,6 +518,8 @@ body {
 section {
     padding: 80px 0;
     scroll-margin-top: 100px;
+    position: relative;
+    background-color: white;
 }
 
 .section-header {
