@@ -23,6 +23,7 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
     color: var(--text-color);
     line-height: 1.8;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .container {
@@ -1349,6 +1351,14 @@ section {
 }
 
 @media (max-width: 768px) {
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+    }
+
     .header-content {
         justify-content: space-between;
         align-items: center;
@@ -1391,6 +1401,8 @@ section {
         min-height: auto;
         overflow: visible;
         margin-bottom: 0;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
     }
 
     .hero-image-pc {
@@ -1490,6 +1502,8 @@ section {
         position: relative;
         z-index: 2;
         background-color: #f8f9fa;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
     }
 
     .lead-heading {
@@ -1709,6 +1723,9 @@ section {
     section {
         padding: 60px 0;
         scroll-margin-top: 80px;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        will-change: transform;
     }
 
     .features-grid,
