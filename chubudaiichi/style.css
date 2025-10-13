@@ -359,18 +359,59 @@ body {
 }
 
 .lead-content {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
-    text-align: center;
 }
 
-.lead-text {
+.lead-heading {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.lead-box {
+    background: white;
+    border-radius: 12px;
+    padding: 35px 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 2px solid var(--primary-color);
+}
+
+.lead-description {
     font-size: 1.1rem;
-    line-height: 2;
+    line-height: 1.9;
     color: var(--text-dark);
+    margin: 0 0 25px 0;
     text-align: left;
-    margin: 0;
-    padding: 0 20px;
+}
+
+.lead-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lead-benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.benefit-icon {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    font-weight: 900;
+    flex-shrink: 0;
+}
+
+.benefit-text {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    line-height: 1.7;
+    font-weight: 500;
 }
 
 /* Hero詳細情報（モバイル用） */
@@ -1399,10 +1440,30 @@ section {
         padding: 40px 0;
     }
 
-    .lead-text {
+    .lead-heading {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+
+    .lead-box {
+        padding: 25px 20px;
+        margin: 0 15px;
+    }
+
+    .lead-description {
         font-size: 1rem;
         line-height: 1.8;
-        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .benefit-icon {
+        font-size: 1.2rem;
+    }
+
+    .benefit-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
 
     .section-title {
@@ -1555,6 +1616,16 @@ section {
 
     .hero-details-box {
         padding: 20px 18px;
+    }
+
+    /* リードセクション（480px以下） */
+    .lead-heading {
+        font-size: 1.4rem;
+    }
+
+    .lead-box {
+        padding: 20px 15px;
+        margin: 0 10px;
     }
 
     section {
