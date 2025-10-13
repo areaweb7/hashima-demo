@@ -431,22 +431,23 @@ body {
 .hero-details-box {
     background: white;
     border-radius: 16px;
-    padding: 30px 25px;
+    padding: 35px 30px;
     box-shadow: var(--shadow-md);
     border-left: 5px solid var(--primary-color);
 }
 
 .hero-details-box h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .details-intro {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
+    font-size: 1.05rem;
+    line-height: 2;
+    margin-bottom: 25px;
     color: var(--text-dark);
 }
 
@@ -457,18 +458,19 @@ body {
 }
 
 .details-list li {
-    font-size: 0.95rem;
-    line-height: 1.8;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 12px;
     color: var(--text-dark);
 }
 
 .details-credential {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-light);
     margin: 0;
-    padding-top: 15px;
+    padding-top: 20px;
     border-top: 1px solid var(--border-color);
+    line-height: 1.8;
 }
 
 /* ボタンスタイル */
@@ -1624,7 +1626,22 @@ section {
     }
 
     .hero-details-box {
-        padding: 20px 18px;
+        padding: 25px 20px;
+    }
+
+    .hero-details-box h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .details-intro {
+        font-size: 1rem;
+        line-height: 1.9;
+    }
+
+    .details-list li {
+        font-size: 0.95rem;
+        line-height: 1.9;
     }
 
     /* リードセクション（480px以下） */
