@@ -440,7 +440,7 @@ body {
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     line-height: 1.5;
 }
 
@@ -454,7 +454,7 @@ body {
 .details-list {
     list-style: none;
     padding: 0;
-    margin: 0 0 20px 0;
+    margin: 0 0 25px 0;
 }
 
 .details-list li {
@@ -1631,7 +1631,7 @@ section {
 
     .hero-details-box h3 {
         font-size: 1.2rem;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .details-intro {
