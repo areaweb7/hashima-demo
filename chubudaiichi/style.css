@@ -454,7 +454,7 @@ body {
 .details-list {
     list-style: none;
     padding: 0;
-    margin: 0 0 25px 0;
+    margin: 0;
 }
 
 .details-list li {
@@ -462,6 +462,10 @@ body {
     line-height: 2;
     margin-bottom: 12px;
     color: var(--text-dark);
+}
+
+.details-list li:last-child {
+    margin-bottom: 0;
 }
 
 .details-credential {
@@ -1345,6 +1349,11 @@ section {
 }
 
 @media (max-width: 768px) {
+    .logo-image {
+        height: 40px;
+        max-width: 200px;
+    }
+
     .nav {
         display: none;
     }
@@ -1576,6 +1585,11 @@ section {
 }
 
 @media (max-width: 480px) {
+    .logo-image {
+        height: 35px;
+        max-width: 180px;
+    }
+
     .hero {
         padding: 0;
     }
