@@ -1404,7 +1404,7 @@ section {
     }
 
     .hero-content {
-        padding: 25px 20px 30px;
+        padding: 25px 20px 40px;
         background-color: white;
         color: var(--text-dark);
         box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
@@ -1457,9 +1457,21 @@ section {
 
     .hero-buttons {
         flex-direction: column;
-        margin-top: 0;
+        margin-top: 25px;
         gap: 12px;
         width: 100%;
+    }
+
+    .hero-buttons .btn-primary {
+        background-color: var(--primary-color);
+        color: white;
+        border-color: var(--primary-color);
+    }
+
+    .hero-buttons .btn-secondary {
+        background-color: white;
+        color: var(--primary-color);
+        border-color: var(--primary-color);
     }
 
     .hero-details-mobile {
@@ -1636,19 +1648,21 @@ section {
     }
 
     .hero-content {
-        padding: 20px 15px 30px;
+        padding: 20px 15px 40px;
     }
     
     .btn {
-        padding: 14px 28px;
-        font-size: 1rem;
+        padding: 16px 28px;
+        font-size: 1.05rem;
         width: 100%;
         display: block;
+        font-weight: 600;
     }
 
     .hero-buttons {
-        gap: 10px;
+        gap: 15px;
         width: 100%;
+        margin-top: 30px;
     }
 
     .hero-details-mobile {
