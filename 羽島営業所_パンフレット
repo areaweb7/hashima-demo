@@ -1,0 +1,179 @@
+{
+  "documentTitle": "中部第一輸送株式会社 岐阜羽島営業所 事業紹介",
+  "companyName": "中部第一輸送株式会社",
+  "officeInfo": {
+    "name": "岐阜羽島営業所",
+    "address": "岐阜県羽島市桑原町小沼午南1156番1",
+    "siteArea": "8674㎡",
+    "buildingArea": "3160㎡",
+    "areaDetails": "積替え保管容量3621.6㎡、保管面積 649.8㎡",
+    "handledWaste": [
+      "金属くず",
+      "廃プラスチック類",
+      "ガラスくず・コンクリートくず・陶磁器くず"
+    ],
+    "processingFacilities": [
+      {
+        "type": "破砕機",
+        "quantity": 1,
+        "capacities": [
+          { "item": "金属くず", "capacity": "4.96トン/日 (8時間)" },
+          { "item": "廃プラスチック類", "capacity": "4.64トン/日 (8時間)" },
+          { "item": "ガラスくず・コンクリートくず・陶磁器くず", "capacity": "5.28トン/日 (8時間)" }
+        ]
+      },
+      {
+        "type": "選別機",
+        "quantity": 1,
+        "capacities": [
+          { "item": "金属くず", "capacity": "121.52トン/日 (8時間)" },
+          { "item": "廃プラスチック類", "capacity": "37.60トン/日 (8時間)" },
+          { "item": "ガラスくず・コンクリートくず・陶磁器くず", "capacity": "107.60トン/日 (8時間)" }
+        ]
+      },
+      {
+        "type": "圧縮機",
+        "quantity": 1,
+        "capacities": [
+          { "item": "廃プラスチック類", "capacity": "192.0トン/日 (8時間)" }
+        ]
+      }
+    ]
+  },
+  "serviceIntroduction": {
+    "conventionalProblems": {
+      "title": "従来の方法と問題点",
+      [cite_start]"summary": "従来の方法では、廃棄物の内容に合わせて複数の業者に個別に依頼する必要があり、時間と費用の無駄が多く発生していました [cite: 33, 40]。",
+      "points": [
+        [cite_start]"業者に依頼する前に、廃棄品と再利用可能なものを仕分ける手間がかかる [cite: 35, 36]。",
+        [cite_start]"保管、廃棄、物流をそれぞれ別の会社に依頼する必要がある [cite: 36]。",
+        [cite_start]"電子製品を処分できる専門業者が少ない [cite: 37, 38]。",
+        [cite_start]"保管中に不要品が出た場合、追加の横持ち輸送費用が発生する [cite: 39]。"
+      ]
+    },
+    "ourSolution": {
+      "title": "中部第一輸送からのご提案",
+      [cite_start]"summary": "ワンストップ対応と一元管理で、お客様の手間とコストを削減します [cite: 45]。",
+      "points": [
+        [cite_start]"仕分けから廃棄まで全て弊社で完結するため、お客様の事前作業は不要です [cite: 47, 48, 49]。",
+        [cite_start]"保管と再出荷も一元管理し、オーダー一本でご依頼いただけます [cite: 50, 51, 52, 53, 54]。",
+        [cite_start]"弊社の羽島営業所にお任せいただくことで、余計な物流費用は発生しません [cite: 55, 56, 57]。"
+      ]
+    }
+  },
+  "workflow": {
+    [cite_start]"title": "回収から売却までのフロー [cite: 60]",
+    "steps": {
+      "collection": [
+        [cite_start]"廃棄資料に基づくお打ち合わせ [cite: 61]",
+        [cite_start]"お見積り [cite: 65]",
+        [cite_start]"ホールまたは倉庫等へ回収 [cite: 67]",
+        [cite_start]"トラックにて弊社リサイクル工場へ輸送（段ボールゴミ、周辺機器も回収） [cite: 68, 69, 70]"
+      ],
+      "processing": {
+        [cite_start]"location": "中部第一輸送倉庫 [cite: 73]",
+        [cite_start]"process": "解体作業 [cite: 74]",
+        "outcomes": [
+          [cite_start]"マテリアル・サーマルリサイクル [cite: 64]",
+          [cite_start]"国内処理先・メーカーへの部品売却 [cite: 75]",
+          [cite_start]"パーツリサイクル [cite: 77]",
+          [cite_start]"残渣処理 [cite: 78]"
+        ]
+      },
+      "payment": [
+        [cite_start]"引取明細書のご確認 [cite: 71]",
+        [cite_start]"お支払い [cite: 72]"
+      ]
+    }
+  },
+  "strengths": [
+    [cite_start]"実績豊富 [cite: 80, 87, 103, 117, 125, 151]",
+    [cite_start]"最新機械 [cite: 81, 90, 106, 120, 126, 152]",
+    [cite_start]"柔軟対応 [cite: 82, 88, 104, 118, 124, 153]",
+    [cite_start]"国内循環 [cite: 83, 89, 105, 119, 127, 154]",
+    [cite_start]"遠隔監視 [cite: 84, 91, 109, 121, 128, 155]",
+    [cite_start]"書類発行 [cite: 85, 92, 110, 122, 129, 156]"
+  ],
+  "features": {
+    "newMachinery": {
+      "title": "最新機械の導入",
+      [cite_start]"status": "最新鋭の機械を導入する予定です [cite: 86][cite_start]。一部は現在建設中です [cite: 123]。"
+    },
+    "permits": {
+      [cite_start]"title": "許可取得一覧 [cite: 93]",
+      [cite_start]"list": "北海道から福岡県、名古屋市まで、産業廃棄物収集運搬業許可および処分業許可を多数取得しています [cite: 94][cite_start]。総合物流企業として、迅速な回収が可能です [cite: 95, 96, 97, 98, 99]。"
+    },
+    "rareMetal": {
+      "title": "電子機器から価値を生み出すレアメタル回収",
+      "introduction": "電子機器の制御基板には、金、銀、銅、パラジウムなどの貴重なレアメタルが含まれています。廃棄ではなく資源として適正に回収・売却することで、お客様に経済的メリットを提供すると同時に、環境保全にも貢献します。",
+      "valueProposition": {
+        "title": "レアメタルの価値",
+        "description": "希少な鉱物資源であるレアメタルは、スマートフォンや電気自動車など、現代産業に不可欠な素材です。パソコン、産業機械、パチスロ機、家電製品など、あらゆる電子機器から回収可能です。1台あたりの含有量はわずかですが、大量に処理することで大きな価値を生み出します。",
+        "benefits": [
+          {
+            "heading": "売却益の還元",
+            "description": "単なる廃棄費用ではなく、レアメタルの買取価格を差し引いた実質コストで処理が可能です。"
+          },
+          {
+            "heading": "国内循環の実現",
+            "description": "回収したレアメタルは国内の精錬工場へ売却し、海外流出を防ぎます。日本の貴重な資源を国内で循環させることで、資源安全保障にも貢献しています。"
+          },
+          {
+            "heading": "SDGs・ESG対応",
+            "description": "適正なリサイクルを通じて、環境配慮とサステナビリティへの取り組みを明確に示せます。企業価値の向上にもつながります。"
+          }
+        ]
+      },
+      "process": {
+        "title": "レアメタル回収の流れ",
+        "steps": [
+          {
+            "number": "01",
+            "name": "回収・搬入",
+            "description": "廃棄予定の電子機器を弊社施設へ搬入します。"
+          },
+          {
+            "number": "02",
+            "name": "解体・選別",
+            "description": "制御基板など、レアメタルを含む部品を丁寧に選別します。"
+          },
+          {
+            "number": "03",
+            "name": "国内工場へ売却",
+            "description": "選別したレアメタルは国内の精錬工場へ売却し、新たな製品へと生まれ変わります。"
+          },
+          {
+            "number": "04",
+            "name": "証明書発行",
+            "description": "適正処理とリサイクル実績を証明する書類を発行します。"
+          }
+        ]
+      },
+      "assurance": {
+        "title": "100%国内循環を保証",
+        "description": "弊社では、回収したレアメタルの100%を国内の認定工場へ売却しています。海外への違法輸出は一切行わず、トレーサビリティを確保した透明性の高いリサイクルシステムを構築しています。"
+      }
+    },
+    "domesticResourceRecycling": {
+      "title": "国内循環による資源保護",
+      [cite_start]"description": "電子製品から排出されるレアメタルは国内の工場に売却し、貴重な資源の海外流出を防ぎます [cite: 101, 102]。"
+    },
+    "remoteMonitoringSystem": {
+      "title": "遠隔監視システム",
+      [cite_start]"description": "遠隔地からでも弊社の処理工程を確認でき、お客様に安心と安全をお約束します [cite: 115, 116][cite_start]。タブレットやスマートフォンからも閲覧可能です [cite: 112]。"
+    },
+    "electronicsAndDataSecurity": {
+      "title": "電子製品処理と情報保護",
+      [cite_start]"specialty": "電子製品の処理に特化し [cite: 137][cite_start]、各種証明書の発行に対応しています [cite: 138]。",
+      "dataDeletionService": {
+        [cite_start]"description": "ご売却いただいた製品に記録されたデータを適正に消去し、電子証明書を発行します [cite: 130, 131]。",
+        "workflow": [
+          [cite_start]"お申込み及びお品物のご売却 [cite: 132]",
+          [cite_start]"専用センターにてデータ消去作業（政府機関採用の専用ソフト使用） [cite: 133, 135]",
+          [cite_start]"Eメールにてデータ消去証明書（電子証明書）を発行 [cite: 145]"
+        ]
+      }
+    }
+  },
+  [cite_start]"businessOverview": "弊社は20年前から静脈物流事業に取り組み、全国の物流会社と独自の「回収・処理ルート」を構築したシステムを導入しています [cite: 79][cite_start]。あらゆる産業廃棄物の収集運搬からリサイクル、最終処分まで一貫して行っています [cite: 79]。"
+}
