@@ -1996,18 +1996,20 @@ section {
     }
 
     .limited-banner {
-        display: flex;
-        /* Block-level flex container */
+        display: inline-flex;
         justify-content: center;
         align-items: center;
         position: relative;
         top: 0;
-        left: auto;
+        left: 50%;
+        /* Force center even without width */
+        transform: translateX(-50%);
+        /* Center align correction */
         right: auto;
-        transform: none;
-        width: fit-content;
-        max-width: 92%;
-        margin: 15px auto 20px;
+        width: auto;
+        max-width: 90%;
+        margin: 15px 0 20px;
+        /* Remove auto margins */
         font-size: 11px;
         padding: 8px 16px;
         white-space: nowrap;
