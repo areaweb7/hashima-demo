@@ -807,6 +807,18 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.btn-white {
+    background-color: white !important;
+    color: var(--primary-color) !important;
+    border: 2px solid white !important;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 .btn-large {
     padding: 18px 50px;
     font-size: 1.1rem;
@@ -2099,9 +2111,9 @@ section {
     }
 
     .hero-buttons .btn-primary {
-        background-color: white !important;
-        color: #0066cc !important;
-        border: 2px solid white !important;
+        background-color: var(--primary-color);
+        color: white;
+        border-color: var(--primary-color);
     }
 
     .hero-buttons .btn-secondary {
