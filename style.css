@@ -1996,23 +1996,24 @@ section {
     }
 
     .limited-banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
         position: relative;
         top: 0;
         left: 0;
         right: 0;
         transform: none;
-        width: auto;
+        width: calc(100% - 40px);
         max-width: none;
         text-align: center;
-        margin: 12px 20px 16px;
+        margin: 12px auto 16px;
+        padding: 8px 12px;
+        font-size: 0.8rem;
     }
 
     .limited-text {
         white-space: nowrap;
         text-align: center;
+        display: block;
     }
 
     .hero .container {
