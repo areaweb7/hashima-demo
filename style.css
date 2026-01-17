@@ -1996,13 +1996,18 @@ section {
     }
 
     .limited-banner {
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: fit-content;
-        max-width: calc(100% - 40px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+        width: auto;
+        max-width: none;
         text-align: center;
+        margin: 12px 20px 16px;
     }
 
     .limited-text {
