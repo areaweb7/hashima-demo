@@ -781,6 +781,18 @@ body {
     border: 2px solid transparent;
 }
 
+.btn-with-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-with-icon svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
 .btn-primary {
     background-color: white;
     color: var(--primary-color);
@@ -3278,5 +3290,68 @@ html {
     .lightbox-image {
         max-width: 95%;
         max-height: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    section {
+        transform: none;
+        will-change: auto;
+    }
+
+    .mobile-menu-toggle span {
+        transition: all 0.3s !important;
+    }
+
+    .mobile-nav {
+        transition: max-height 0.3s ease !important;
+    }
+
+    .mobile-nav a {
+        transition: background-color 0.3s !important;
+    }
+
+    .outline-panel {
+        transition: transform 0.3s ease !important;
+    }
+
+    .outline-overlay {
+        transition: opacity 0.2s ease !important;
+    }
+
+    .back-to-top {
+        transition: opacity 0.2s ease, transform 0.2s ease !important;
+    }
+
+    .limited-banner {
+        animation: bannerFlash 2.4s ease-out 0.1s 1 both, bannerGlow 1.6s ease-in-out 0.1s 2 !important;
+    }
+
+    .limited-banner::before {
+        animation: sparkleLeft 1.8s ease-out 0.1s 1 both !important;
+    }
+
+    .limited-banner::after {
+        animation: sparkleRight 1.8s ease-out 0.25s 1 both !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
     }
 }

@@ -1,16 +1,22 @@
+const isMobile = window.matchMedia('(max-width: 768px)').matches;
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const disableMotion = isMobile || prefersReducedMotion;
+
 // スムーズスクロール
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+if (!disableMotion) {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
     });
-});
+}
 
 // ヘッダーのスクロール時の背景変更
 const header = document.querySelector('.header');
@@ -29,28 +35,30 @@ window.addEventListener('scroll', () => {
 });
 
 // スクロールアニメーション - 要素が表示されたらフェードイン
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+if (!disableMotion) {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // アニメーション対象の要素を設定
+    const animateElements = document.querySelectorAll('.feature-card, .strength-card, .facility-card, .workflow-step, .data-step');
+    animateElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        observer.observe(el);
     });
-}, observerOptions);
-
-// アニメーション対象の要素を設定
-const animateElements = document.querySelectorAll('.feature-card, .strength-card, .facility-card, .workflow-step, .data-step');
-animateElements.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-    observer.observe(el);
-});
+}
 
 // 数値カウントアップアニメーション（処理能力の数値など）
 function animateValue(element, start, end, duration) {
@@ -119,76 +127,84 @@ const createMobileMenu = () => {
 // ページ読み込み時に実行
 window.addEventListener('load', () => {
     // ヒーローセクションのアニメーション
-    const heroContent = document.querySelector('.hero-content');
-    if (heroContent) {
-        heroContent.style.animation = 'fadeInUp 1s ease-out';
+    if (!disableMotion) {
+        const heroContent = document.querySelector('.hero-content');
+        if (heroContent) {
+            heroContent.style.animation = 'fadeInUp 1s ease-out';
+        }
     }
-    
+
     // モバイルメニューの設定
     createMobileMenu();
 });
 
 // ウィンドウリサイズ時の処理
 let resizeTimer;
-window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-        location.reload();
-    }, 250);
-});
+if (!isMobile) {
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            location.reload();
+        }, 250);
+    });
+}
 
 // ボタンのクリック時のフィードバック
-const buttons = document.querySelectorAll('.btn');
-buttons.forEach(button => {
-    button.addEventListener('click', function(e) {
-        // リップル効果
-        const ripple = document.createElement('span');
-        const rect = this.getBoundingClientRect();
-        const size = Math.max(rect.width, rect.height);
-        const x = e.clientX - rect.left - size / 2;
-        const y = e.clientY - rect.top - size / 2;
-        
-        ripple.style.cssText = `
-            position: absolute;
-            width: ${size}px;
-            height: ${size}px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.5);
-            left: ${x}px;
-            top: ${y}px;
-            transform: scale(0);
-            animation: ripple 0.6s ease-out;
-            pointer-events: none;
-        `;
-        
-        this.style.position = 'relative';
-        this.style.overflow = 'hidden';
-        this.appendChild(ripple);
-        
-        setTimeout(() => ripple.remove(), 600);
-    });
-});
+if (!disableMotion) {
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+        button.addEventListener('click', function (e) {
+            // リップル効果
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
 
-// リップルアニメーションのスタイルを追加
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes ripple {
-        to {
-            transform: scale(4);
-            opacity: 0;
+            ripple.style.cssText = `
+                position: absolute;
+                width: ${size}px;
+                height: ${size}px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.5);
+                left: ${x}px;
+                top: ${y}px;
+                transform: scale(0);
+                animation: ripple 0.6s ease-out;
+                pointer-events: none;
+            `;
+
+            this.style.position = 'relative';
+            this.style.overflow = 'hidden';
+            this.appendChild(ripple);
+
+            setTimeout(() => ripple.remove(), 600);
+        });
+    });
+
+    // リップルアニメーションのスタイルを追加
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
         }
-    }
-`;
-document.head.appendChild(style);
+    `;
+    document.head.appendChild(style);
+}
 
 // パララックス効果（ヒーローセクション）
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero && scrolled < window.innerHeight) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-});
+if (!disableMotion) {
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector('.hero');
+        if (hero && scrolled < window.innerHeight) {
+            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+    });
+}
 
 // カードのホバー効果強化
 const cards = document.querySelectorAll('.feature-card, .strength-card, .facility-card');
@@ -232,4 +248,3 @@ const validateForm = (form) => {
 console.log('%c中部第一輸送株式会社 岐阜羽島営業所', 'font-size: 20px; font-weight: bold; color: #0066cc;');
 console.log('%cワンストップで実現する、次世代の静脈物流', 'font-size: 14px; color: #666;');
 console.log('%chttps://cdy.co.jp/', 'font-size: 12px; color: #00aaff;');
-
