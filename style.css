@@ -831,6 +831,18 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.hero .btn-white {
+    background-color: #e9f2ff !important;
+    border-color: #2f6edb !important;
+    color: #1f4fa3 !important;
+    box-shadow: 0 6px 18px rgba(47, 110, 219, 0.25);
+}
+
+.hero .btn-white:hover {
+    background-color: #dbe9ff !important;
+    box-shadow: 0 8px 20px rgba(47, 110, 219, 0.3);
+}
+
 .btn-large {
     padding: 18px 50px;
     font-size: 1.1rem;
