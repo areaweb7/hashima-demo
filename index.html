@@ -76,9 +76,17 @@
             color: var(--primary-color) !important;
         }
 
-        /* hero-overlayの不透明度を軽く */
+        /* hero-overlay: 中央はテキスト視認性のため濃く、周辺は設備が見えるよう薄く（ヴィネット風） */
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(0, 82, 147, 0.8) 0%, rgba(0, 130, 200, 0.75) 100%) !important;
+            background: radial-gradient(ellipse at center, rgba(0, 40, 85, 0.65) 0%, rgba(0, 70, 130, 0.45) 45%, rgba(0, 100, 160, 0.2) 100%) !important;
+        }
+
+        /* 背景が透けるぶん、テキストのシャドウを強化 */
+        .hero-title {
+            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.9), 0 2px 12px rgba(0, 0, 0, 0.8), 0 0 6px rgba(0, 0, 0, 0.6) !important;
+        }
+        .hero-catchphrase {
+            text-shadow: 0 3px 18px rgba(0, 0, 0, 0.85), 0 2px 8px rgba(0, 0, 0, 0.7) !important;
         }
 
         /* 権威性バッジ（シンプル・信頼重視） */
@@ -1274,8 +1282,8 @@
                 <div class="gallery-grid-4col">
                     <!-- 実際の画像 -->
                     <div class="gallery-item" onclick="openLightbox(this)">
-                        <img src="images/gallery/recycling_materials_sorted.jpg"
-                            alt="岐阜羽島営業所で精密に選別されたリサイクル用のプラスチック・金属素材">
+                        <img src="images/gallery/processing_line_operation.jpg"
+                            alt="岐阜羽島営業所の最新設備が整った清潔なリサイクル処理ラインの全景">
                     </div>
                     <div class="gallery-item" onclick="openLightbox(this)">
                         <img src="images/gallery/cable_wire_collection.jpg"
@@ -1302,8 +1310,8 @@
                             alt="周辺環境に配慮して設置された、施設内の大規模な集塵・防塵対策設備">
                     </div>
                     <div class="gallery-item" onclick="openLightbox(this)">
-                        <img src="images/gallery/processing_line_operation.jpg"
-                            alt="廃棄物の一括処理が行われる岐阜羽島営業所のメイン処理ライン全景">
+                        <img src="images/gallery/recycling_materials_sorted.jpg"
+                            alt="岐阜羽島営業所で精密に選別されたリサイクル用のプラスチック・金属素材">
                     </div>
                     <div class="gallery-item" onclick="openLightbox(this)">
                         <img src="images/gallery/facility_interior_warehouse.jpg"
