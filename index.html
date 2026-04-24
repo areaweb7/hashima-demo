@@ -81,12 +81,21 @@
             background: radial-gradient(ellipse at center, rgba(0, 40, 85, 0.65) 0%, rgba(0, 70, 130, 0.45) 45%, rgba(0, 100, 160, 0.2) 100%) !important;
         }
 
-        /* 背景が透けるぶん、テキストのシャドウを強化 */
-        .hero-title {
-            text-shadow: 0 4px 24px rgba(0, 0, 0, 0.9), 0 2px 12px rgba(0, 0, 0, 0.8), 0 0 6px rgba(0, 0, 0, 0.6) !important;
+        /* スマホ時のコンテンツ背景に淡いブルーグラデーションを追加（白一色だと寂しいため） */
+        @media (max-width: 768px) {
+            .hero-content {
+                background: linear-gradient(180deg, #fbfdfe 0%, #f3f8fc 100%) !important;
+            }
         }
-        .hero-catchphrase {
-            text-shadow: 0 3px 18px rgba(0, 0, 0, 0.85), 0 2px 8px rgba(0, 0, 0, 0.7) !important;
+
+        /* 背景が透けるぶん、テキストのシャドウを強化（PCのみ。スマホは白背景なのでシャドウ不要） */
+        @media (min-width: 769px) {
+            .hero-title {
+                text-shadow: 0 4px 24px rgba(0, 0, 0, 0.9), 0 2px 12px rgba(0, 0, 0, 0.8), 0 0 6px rgba(0, 0, 0, 0.6) !important;
+            }
+            .hero-catchphrase {
+                text-shadow: 0 3px 18px rgba(0, 0, 0, 0.85), 0 2px 8px rgba(0, 0, 0, 0.7) !important;
+            }
         }
 
         /* 権威性バッジ（シンプル・信頼重視） */
